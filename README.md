@@ -18,10 +18,22 @@ Writing tests in Go is just like writing regular functions, but with a few requi
 - The test function must take one argument: `t *testing.T`.
 
 ### Constansts
-Constants are defined with the keyword `const variableName = "Hi"`.
+Constants are defined with the keyword `const variableName = "Hi"`. If you need to define multiple constants, you can group them together using parenthesis:
+```
+const (
+    Hello = "Hello"
+    World = "World"
+)
+```
 
 ### Subtests
 A subtest is a way to group multiple related test scenarios within the same Test function. It allows you to isolate isolate and run each scenario independently. To create a subtest, use `t.Run("description", function{...})`.
 
 ### Switch
 If your code contains many `if` statements, you can refactor it using a `switch` statement. This makes the code more readable and easier to extend if you need to add new conditions.
+
+### Named return values
+In Go, you can create a function with a named return value by declaring the varibale and its type inside parenthesis, right after the function parameters. For example:
+```
+func greetingPrefix(language string) (prefix string) {...}
+```
