@@ -22,3 +22,6 @@ Constants are defined with the keyword `const variableName = "Hi"`.
 
 ### Subtests
 A subtest is a way to group multiple related test scenarios within the same Test function. It allows you to isolate isolate and run each scenario independently. To create a subtest, use `t.Run("description", function{...})`.
+
+### Switch
+If your code contains many `if` statements, you can refactor it using a `switch` statement. This makes the code more readable and easier to extend if you need to add new conditions.
