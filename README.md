@@ -37,3 +37,8 @@ In Go, you can create a function with a named return value by declaring the vari
 ```
 func greetingPrefix(language string) (prefix string) {...}
 ```
+
+### Benchmark
+In Go, you can write a benchmark to mesure perfomance of your code. It is just like a test function, but the parameter is testing.B:
+`func BenchmarkRepeat(b *testing.B) {...}`
+To run the benchmark, execute `go test -bench=.` in the terminal or `go test -bench="."` in the powershell.
